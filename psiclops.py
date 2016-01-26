@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -17,4 +15,5 @@ def flask_tutorial():
     return render_template('flask_tutorial.html')
 
 if __name__ == '__main__':
-  app.run(debug=True)
+  # app.run(debug=True)
+  app.run(host='0.0.0.0')
