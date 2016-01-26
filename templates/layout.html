@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Flask</title>
+    <title>psiclops.io</title>
     <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">Flask App</h1>
+        <h1 class="logo">psiclops.io</h1>
         <strong><nav>
           <ul class="menu">
             <li><a href="{{ url_for('home') }}">Home</a></li>
+            <!-- <li><a href="{{ url_for('home') }}">Music</a></li> -->
+            <!-- <li><a href="{{ url_for('home') }}">Pomo.py</a></li> -->
+            <li><a href="{{ url_for('flask_tutorial') }}">Flask Tutorial</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
           </ul>
         </nav></strong>
