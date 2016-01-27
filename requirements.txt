@@ -3,4 +3,3 @@ itsdangerous==0.24
 Werkzeug==0.11.3
 Jinja2==2.8
 gunicorn==19.4.5
-selenium==2.49.2
