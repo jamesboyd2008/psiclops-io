@@ -3,11 +3,33 @@
 {% block content %}
   <h2>Flask Tutorial</h2>
   <p>There are many languages and web frameworks to choose them, so why should you pick flask? Flask is a simple, yet extensible, web framework written in python. It is easy to get a project started, but there are many features you can add as you can go. I used flask to build this website, and it was a great framework to start with.</p>
+
+  <p>This guide goes over installing Python, Flask, Gunicorn, and utilizes Github and Heroku for deployment.</p>
+
   <h4>1. Install Python</h4>
-  <p>If you are on a Mac or Linux/BSD box you should have python installed already. Python 2 has been the standard, but Python 3 is coming around. Python 3 has some changes that are not backwards compatible. Flask is currently only support on Python 2, plus many packages are still dependent on Python 2, so you should stick with that when using Flask. Using virtualenv is also highly suggested, as this sandboxes each environment separately allowing you to install packages on a per project basis allowing for portability. The following code should work on most systems.</p>
-  <p><code>sudo pip install virtualenv</code></p>
+  <p>If you are running Mac or Linux/BSD you should have python installed already. These installation instructions are currently for Mac users, but the process is similar for those on Linux/BSD. Python 2 has been the standard, but Python 3 is coming around. Python 3 has some changes that are not backwards compatible. Flask is currently only support on Python 2, plus many packages are still dependent on Python 2, so you should stick with that when using Flask. Using virtualenv is also highly suggested, as this sandboxes each environment separately allowing you to install packages on a per project basis allowing for portability. I do not currently go through that here, but it is relatively easy to setup. The following code should work on most systems.</p>
+
+  <p>Install command line tools:</p>
+  <p><code>xcode-select --install</code></p>
+  <p>This does install a version of python which you can use, but if you want to use a newer version, I suggest using homebrew.</p>
+
+  <p>Install Homebrew:</p>
+  <p><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></p>
+
+  <p>Run this command to verify homebrew is installed properly:</p>
+  <p><code>brew doctor</code></p>
+  <p>If any problems occur, follow the instructions and you should be on your way.</p>
+
+  <p>And finally, install Python:</p>
+  <p><code>brew install python</code></p>
+  <p>Newer versions of Python come with pip, the python package manager, installed by default.</p>
+
   <h4>2. Install Flask</h4>
-  <p></p>
+  <p>Install flask & virtualenv & gunicorn with pip:</p>
+  <p><code>pip install flask virtualenv gunicorn</code></p>
+  <p>This will install Flask and its dependencies, along with virtualenv and Gunicorn, a web server.</p>
+
   <h4>3. Building your app</h4>
-  <p></p>
+  <p>Now this is where the real fun begins!</p>
+
 {% endblock %}
