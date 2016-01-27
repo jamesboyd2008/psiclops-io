@@ -10,9 +10,5 @@ def home():
 def about():
   return render_template('about.html')
 
-@app.route('/flask_tutorial')
-def flask_tutorial():
-    return render_template('flask_tutorial.html')
-
 if __name__ == '__main__':
   app.run()
