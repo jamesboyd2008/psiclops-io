@@ -2,26 +2,27 @@
 <html>
     <head>
         <title>psiclops.io</title>
-        <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+        <meta charset="utf-8">
+        <strong><link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}"></strong>
         <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header>
-            <div class="container">
-                <h1 class="logo"><a href="/" id="home">psiclops.io</a></h1>
-                <nav>
-                    <ul class="menu">
-                        <li><a href="{{ url_for('home') }}">Home</a></li>
-                        <li><a href="{{ url_for('about') }}">About</a></li>
-                        <li><a href="https://github.com/psiclops">Github</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <h1><a href="/">psiclops.io</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="https://github.com/psiclops">Github</a></li>
+                </ul>
+            </nav>
         </header>
-
-        <div class="container">
+        <main>
             {% block content %}
             {% endblock %}
-        </div>
+        </main>
+        <footer>
+            Created by Nick Russo - <a href="mailto:nick@psiclops.io">nick@psiclops.io</a>
+        </footer>
     </body>
 </html>

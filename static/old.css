@@ -105,3 +105,14 @@ pre code {
   text-decoration: none;
   color: inherit;
 }
+
+.self {
+    margin: 1%;
+    height: 5%;
+    width: 5%;
+}
+
+.social {
+    width: 15%;
+    height: 15%;
+}
