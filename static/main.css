@@ -62,9 +62,16 @@ main {
 }
 
 main ul {
-    margin-left: 40%;
+    margin-left: 20%;
     list-style-position: inside;
     text-align: left;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+main ul li {
+    margin: 0;
 }
 
 footer {
