@@ -93,3 +93,11 @@ main a img {
 .align-left {
     text-align: left;
 }
+
+i {
+    color: black;
+}
+
+a h4 {
+    color: black;
+}
